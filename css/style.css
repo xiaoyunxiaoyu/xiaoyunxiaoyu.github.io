@@ -1,0 +1,307 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .clearfix:after{
+        content: "";
+        height: 0 ;
+        line-height: 0;
+        display: block;
+        visibility: hidden;
+        clear: both;
+    }
+    .clearfix{
+        zoom:1;
+    }
+    a{
+        text-decoration: none;
+        color: #222;
+    }
+
+    ul{
+        list-style: none;
+    }
+    li{
+        float: left;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 1px solid #999;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    li:nth-of-type(3),li:nth-of-type(6),li:nth-of-type(9),li:nth-of-type(12){
+        margin-right: 0 !important;
+    }
+    img{
+        vertical-align: middle;
+    }
+    .wrap{
+        width: 100%;
+        height: auto;
+        background: #f0f0f0;
+        font: 500 12px "microsoft yahei";
+        color: #222;
+    }
+    .nav {
+        width: 100%;
+        height: 80px;
+        background: #ffd100;
+        font-size: 20px;
+    }
+    .nav>ul{
+        width: 730px;
+        height: 80px;
+        margin: 0 auto;
+        list-style: none;
+    }
+    .nav>ul>li{
+        padding: 0 20px;
+        line-height: 80px;
+        float: left;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        overflow: visible;
+    }
+    .nav li ul{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 240px;
+        height: 86px;
+        font-size: 18px;
+        color: #222;
+        background: white;
+        z-index: 999;
+        padding-top: 10px;
+        -moz-box-shadow:5px 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow:5px 5px 10px rgba(0, 0, 0, 0.2);
+        -o-box-shadow:5px 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow:5px 5px 10px rgba(0, 0, 0, 0.2);
+        display: none;
+    }
+    .nav li ul li{
+        width: 120px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        border: none;
+    }
+
+    .loop{
+        width: 100%;
+        height: 530px;
+        background: #fff;
+    }
+    .loopmain{
+        width: 1100px;
+        height: 450px;
+        padding: 40px 0;
+        position: relative;
+        left: 50%;
+        margin-left: -550px;
+    }
+    .loopbanner{
+        width: 1100px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+    .loopbanner ul{
+        width: 100%;
+        height: 450px;
+        list-style: none;
+    }
+    .loopbanner ul>li{
+        width: 1100px;
+        height: 450px;
+        border-radius: 10px;
+        position: absolute;
+    }
+    .loopbanner ul>li:nth-of-type(1){
+        z-index: 1;
+    }
+    .loopbanner ol{
+        position: absolute;
+        width: 300px;
+        height: 20px;
+        bottom: 30px;
+        right: 30px;
+        list-style: none;
+        z-index: 999;
+    }
+    .loopbanner ol>li{
+        width: 40px;
+        height: 20px;
+        margin-right: 20px !important;
+        float: left;
+        background: #f0f0f0;
+        border-radius: 0;
+        opacity: .5;
+        cursor: pointer;
+    }
+    .loopbanner ol>li.select{
+        background: #ffd100;
+    }
+    .loopLeft,.loopRight{
+        width: 40px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        text-align: center;
+        background: rgba(153,153,153,.3);
+        border-radius: 3px;
+        color: white;
+        font: 800 30px/60px "黑体";
+        z-index: 2;
+        display: none;
+        cursor: pointer;
+    }
+    .loopLeft{
+        left: 10px;
+    }
+    .loopRight{
+        right: 10px;
+    }
+    .main{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .app-design{
+        margin-top: 40px;
+        height: 1244px;
+    }
+    .app-design h1,.website h1,.poster h1{
+        text-align: center;
+        font: 600 30px "microsoft yahei";
+    }
+    .app-design ul{
+        text-align: center;
+    }
+    .app-design li{
+        width: 338px;
+        height: 500px;
+        margin-top: 30px;
+        margin-right: 40px;
+
+    }
+    .app-design li.li-no{
+        width: 338px;
+        height: 30px;
+        font: 500 18px "microsoft yahei";
+        border: none;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .activity{
+        margin-top: 40px;
+        height: 240px;
+    }
+    .activity li,.website li{
+        width: 530px;
+    }
+    .activity li{
+        height: 240px;
+    }
+    .activity li:nth-of-type(2),.website li:nth-of-type(2){
+        margin-left: 40px;
+    }
+    .website{
+        margin-top: 60px;
+        height: 784px;
+    }
+    .website ul{
+        margin-top: 30px;
+    }
+    .website li{
+        height: 700px;
+    }
+    .card{
+        width: 100%;
+        height: 240px;
+        padding: 40px 0;
+    }
+    .card li,.poster li{
+        width: 340px;
+    }
+    .card li:nth-of-type(2){
+        margin: 0 40px;
+    }
+    .poster{
+
+    }
+    .poster ul li{
+        margin-top: 40px;
+    }
+    .poster li:nth-of-type(2),.poster li:nth-of-type(5),.poster li:nth-of-type(8){
+        /*margin-left: 40px;
+        margin-right: 40px;*/
+        margin: 40px 40px 0 40px;
+    }
+    .footer{
+        width: 100%;
+        height: 260px;
+        background: #282828;
+        color: #666;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+    .footer h4{
+        font-size: 24px;
+    }
+    .footer-main{
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .contact{
+        height: 120px;
+        padding: 24px 0;
+        margin-bottom: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .contact ul{
+        margin-top: 20px;
+    }
+    .contact li{
+        margin-right: 50px !important;
+        border: none;
+    }
+
+    .contact a{
+        color: #666;
+    }
+    .contact a:hover{
+        color: #fff;
+    }
+
+    /******************特效的效果**************************/
+    .nav .navShow{
+        background-color: #000;
+        color: #ffd100 !important;
+    }
+
+    /*返回顶部小火箭*/
+    .topRock{
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        width: 36px;
+        height: 65px;
+        display: none;
+        cursor: pointer;
+    }
+    .rockfix{
+        bottom: 330px;
+    }
+
+    .liOpacity{
+        opacity: .8;
+    }
+    .liOpacity2{
+        opacity: 1;
+    }
